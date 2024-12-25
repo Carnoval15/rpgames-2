@@ -16,7 +16,7 @@ const images = [
 export default function Home() {
     return (
         <div className="dark">
-            <BackgroundBeamsWithCollision className="h-screen">
+            <BackgroundBeamsWithCollision className="h-screen w-full">
                 <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl px-3 font-bold text-center text-black dark:text-white font-sans tracking-tight">
                     RPGames <br/> Your new favorite SCP SL {" "}
                     <div
