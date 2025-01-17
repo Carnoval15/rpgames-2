@@ -2,7 +2,9 @@
 import Image from "next/image";
 import {BackgroundBeamsWithCollision} from "@/components/ui/background-beams-with-collision";
 import {ImagesSlider} from "@/components/ui/images-slider";
+import {FeaturesSectionDemo} from "@/components/ui/bento-grid";
 import {motion} from "framer-motion";
+import React from "react";
 
 //test
 const images = [
@@ -32,7 +34,7 @@ export default function Home() {
                     </div>
                 </h2>
             </BackgroundBeamsWithCollision>
-            <ImagesSlider className="h-[40rem] max-h-screen" images={images}>
+            <ImagesSlider className="h-screen max-h-screen" images={images}>
                 <motion.div
                     initial={{
                         opacity: 0,
@@ -49,7 +51,7 @@ export default function Home() {
                 >
                     <motion.p
                         className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-                        The first international gaming community based in Iran! <br/>
+                        The first localised Iranian server in the game! <br/>
                     </motion.p>
                     <a href={"https://discord.gg/rpgames"} target="_blank" rel="noreferrer">
                         <button
@@ -61,6 +63,15 @@ export default function Home() {
                     </a>
                 </motion.div>
             </ImagesSlider>
+            <div
+                className="h-[120rem] w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
+                {/* Radial gradient for the container to give a faded look */}
+                <div
+                    className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+                <FeaturesSectionDemo/>
+            </div>
+
         </div>
 
     )
