@@ -3,6 +3,7 @@ import type {NextConfig} from "next";
 const hostnames = [
     'assets.aceternity.com',
     'images.unsplash.com',
+    'yqxicxlxliqzxrzajydh.supabase.co'
 ];
 const nextConfig: NextConfig = {
     /* config options here */
