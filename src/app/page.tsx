@@ -2,6 +2,7 @@
 import Image from "next/image";
 import {BackgroundBeamsWithCollision} from "@/components/ui/background-beams-with-collision";
 import {ImagesSlider} from "@/components/ui/images-slider";
+import {AnimatedTestimonialsDemo} from "@/components/testimonials";
 import {BentoGrid, BentoGridItem} from "@/components/ui/bento-grid";
 import {
     IconArrowWaveRightUp,
@@ -29,12 +30,12 @@ const Skeleton = () => (
 );
 const items = [
     {
-        title: "The Dawn of Innovation",
-        description: "Explore the birth of groundbreaking ideas and inventions.",
+        title: "Shooting Interactions",
+        description: "Shoot the doors' card scanners and see the magic happen.",
         header: (
             <Image
                 src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3MTYwMTUyNzcsImV4cCI6MzMyMjA0NzkyNzd9.x1T6qlvUr9M0ibafMhqM46TEhZlrMjvY3SRZu9LHvXA&t=2024-05-18T06%3A54%3A37.269Z"
-                alt="Innovation"
+                alt="Shooting Interactions"
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
@@ -43,12 +44,12 @@ const items = [
         icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500"/>,
     },
     {
-        title: "The Digital Revolution",
-        description: "Dive into the transformative power of technology.",
+        title: "Remote Keycard",
+        description: "Open any keycard required doors without the need to take out your keycard.",
         header: (
             <Image
                 src="/placeholder.svg?height=200&width=400"
-                alt="Digital Revolution"
+                alt="Remote Keycard"
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
@@ -57,12 +58,12 @@ const items = [
         icon: <IconFileBroken className="h-4 w-4 text-neutral-500"/>,
     },
     {
-        title: "The Art of Design",
-        description: "Discover the beauty of thoughtful and functional design.",
+        title: "Localized server",
+        description: "We are the one and only Persian server recognized by Northwood.",
         header: (
             <Image
                 src="/placeholder.svg?height=200&width=400"
-                alt="Design"
+                alt="Localized server"
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
@@ -71,13 +72,13 @@ const items = [
         icon: <IconSignature className="h-4 w-4 text-neutral-500"/>,
     },
     {
-        title: "The Power of Communication",
+        title: "Mapping",
         description:
-            "Understand the impact of effective communication in our lives.",
+            "We have multiple developers working on custom server mappings! expect changes from time to time!",
         header: (
             <Image
                 src="/placeholder.svg?height=200&width=800"
-                alt="Communication"
+                alt="Mapping"
                 width={800}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
@@ -165,7 +166,7 @@ export default function Home() {
                 >
                     <motion.p
                         className="font-bold text-xl md:text-6xl text-center bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-400 py-4">
-                        The first localised Iranian server in the game! <br/>
+                        The first localized Iranian server in the game! <br/>
                     </motion.p>
                     <a href={"https://discord.gg/rpgames"} target="_blank" rel="noreferrer">
                         <button
@@ -178,10 +179,11 @@ export default function Home() {
                 </motion.div>
             </ImagesSlider>
             <div
-                className="h-[70rem] w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center">
+                className="h-[150rem] lg:h-[70rem] md:h-[70rem] sm:h-[200rem] w-full dark:bg-black bg-white  dark:bg-grid-small-white/[0.2] bg-grid-small-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
                 <div
                     className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
 
                 <BentoGrid className="max-w-5xl mx-auto">
                     {items.map((item, i) => (
@@ -195,8 +197,16 @@ export default function Home() {
                         />
                     ))}
                 </BentoGrid>
-            </div>
 
+            </div>
+            <div
+                className="h-[45rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+                {/* Radial gradient for the container to give a faded look */}
+                <div
+                    className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+                <AnimatedTestimonialsDemo/>
+            </div>
 
         </div>
 
