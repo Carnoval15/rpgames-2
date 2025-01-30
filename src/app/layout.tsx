@@ -58,7 +58,7 @@ const geistMono = localFont({
 //     );
 // }
 
-export function FloatingNavDemo() {
+function FloatingNavDemo() {
     const navItems = [
         {
             name: "Home",
