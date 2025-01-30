@@ -87,7 +87,7 @@ const items = [
         icon: <IconTableColumn className="h-4 w-4 text-neutral-500"/>,
     },
     {
-        title: "The Pursuit of Knowledge",
+        title: "UIU Team",
         description: "Join the quest for understanding and enlightenment.",
         header: (
             <Image
@@ -101,7 +101,7 @@ const items = [
         icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500"/>,
     },
     {
-        title: "The Joy of Creation",
+        title: "Serpeants' hand team",
         description: "Experience the thrill of bringing ideas to life.",
         header: (
             <Image
@@ -135,7 +135,7 @@ export default function Home() {
         <div className="dark">
             <BackgroundBeamsWithCollision className="h-screen w-full">
                 <h2 className="text-2xl relative z-20 md:text-4xl lg:text-7xl px-3 font-bold text-center text-black dark:text-white font-sans tracking-tight">
-                    RPGames <br/> Your new favorite SCP SL {" "}
+                    RPGames <br/> Your new favorite SCP:SL {" "}
                     <div
                         className="relative mx-auto inline-block w-max [filter:drop-shadow(0px_1px_3px_rgba(27,_37,_80,_0.14))]">
                         <div

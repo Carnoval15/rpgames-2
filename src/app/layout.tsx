@@ -5,6 +5,8 @@ import "./globals.css";
 import React, {useState} from "react";
 import {HoveredLink, Menu, MenuItem, ProductItem} from "@/components/ui/navbar-menu";
 import {cn} from "@/lib/utils";
+import {FloatingNav} from "@/components/ui/floating-navbar";
+import {IconHome, IconMessage, IconUser} from "@tabler/icons-react";
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -17,40 +19,68 @@ const geistMono = localFont({
     weight: "100 900",
 });
 
-function Navbar({className}: { className?: string }) {
-    const [active, setActive] = useState<string | null>(null);
+// function Navbar({className}: { className?: string }) {
+//     const [active, setActive] = useState<string | null>(null);
+//     return (
+//         <div
+//             className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
+//         >
+//             <Menu setActive={setActive}>
+//                 <MenuItem setActive={setActive} active={active} item="Services">
+//                     <div className="flex flex-col space-y-4 text-sm">
+//                         <HoveredLink href="/web-dev">Web Development</HoveredLink>
+//                         <HoveredLink href="/interface-design">Interface Design</HoveredLink>
+//                         <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
+//                         <HoveredLink href="/branding">Branding</HoveredLink>
+//                     </div>
+//                 </MenuItem>
+//                 <MenuItem setActive={setActive} active={active} item="Products">
+//                     <div className="  text-sm grid grid-cols-2 gap-10 p-4">
+//                         <ProductItem
+//                             title="Algochurn"
+//                             href="https://algochurn.com"
+//                             src=""
+//                             description="Prepare for tech interviews like never before."
+//                         />
+//                     </div>
+//                 </MenuItem>
+//                 <HoveredLink href="/about">About</HoveredLink>
+//                 <MenuItem setActive={setActive} active={active} item="Pricing">
+//                     <div className="flex flex-col space-y-4 text-sm">
+//                         <HoveredLink href="/hobby">Hobby</HoveredLink>
+//                         <HoveredLink href="/individual">Individual</HoveredLink>
+//                         <HoveredLink href="/team">Team</HoveredLink>
+//                         <HoveredLink href="/enterprise">Enterprise</HoveredLink>
+//                     </div>
+//                 </MenuItem>
+//             </Menu>
+//         </div>
+//     );
+// }
+
+export function FloatingNavDemo() {
+    const navItems = [
+        {
+            name: "Home",
+            link: "/",
+            icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white"/>,
+        },
+        {
+            name: "About",
+            link: "/about",
+            icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white"/>,
+        },
+        {
+            name: "Shop",
+            link: "/contact",
+            icon: (
+                <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white"/>
+            ),
+        },
+    ];
     return (
-        <div
-            className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50", className)}
-        >
-            <Menu setActive={setActive}>
-                <MenuItem setActive={setActive} active={active} item="Services">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/web-dev">Web Development</HoveredLink>
-                        <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-                        <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-                        <HoveredLink href="/branding">Branding</HoveredLink>
-                    </div>
-                </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Products">
-                    <div className="  text-sm grid grid-cols-2 gap-10 p-4">
-                        <ProductItem
-                            title="Algochurn"
-                            href="https://algochurn.com"
-                            src=""
-                            description="Prepare for tech interviews like never before."
-                        />
-                    </div>
-                </MenuItem>
-                <MenuItem setActive={setActive} active={active} item="Pricing">
-                    <div className="flex flex-col space-y-4 text-sm">
-                        <HoveredLink href="/hobby">Hobby</HoveredLink>
-                        <HoveredLink href="/individual">Individual</HoveredLink>
-                        <HoveredLink href="/team">Team</HoveredLink>
-                        <HoveredLink href="/enterprise">Enterprise</HoveredLink>
-                    </div>
-                </MenuItem>
-            </Menu>
+        <div className="relative  w-full">
+            <FloatingNav navItems={navItems}/>
         </div>
     );
 }
@@ -73,7 +103,7 @@ export default function RootLayout({
         {children}
 
         <div className="dark">
-            <Navbar/>
+            <FloatingNavDemo/>
             <div
                 className="h-96 w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}
