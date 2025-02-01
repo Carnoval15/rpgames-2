@@ -54,7 +54,7 @@ export default function About() {
             <div className="flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 lg:px-8">
 
                 <div
-                    className="z-30 h-screen w-screen dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative items-center justify-center">
+                    className="z-30  lg:h-screen md:h-screen sm:h-screen w-screen dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative items-center justify-center">
                     {/* Radial gradient for the container to give a faded look */}
                     <div
                         className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
