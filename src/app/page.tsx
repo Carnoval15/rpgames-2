@@ -4,6 +4,7 @@ import {BackgroundBeamsWithCollision} from "@/components/ui/background-beams-wit
 import {ImagesSlider} from "@/components/ui/images-slider";
 import {AnimatedTestimonialsDemo} from "@/components/testimonials";
 import {BentoGrid, BentoGridItem} from "@/components/ui/bento-grid";
+import {Cover} from "@/components/ui/cover";
 import {
     IconArrowWaveRightUp,
     IconBoxAlignRightFilled,
@@ -31,7 +32,7 @@ const Skeleton = () => (
 const items = [
     {
         title: "Shooting Interactions",
-        description: "Shoot the doors' card scanners and see the magic happen.",
+        description: "Shoot the card scanners and see the magic happen.",
         header: (
             <Image
                 src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3MTYwMTUyNzcsImV4cCI6MzMyMjA0NzkyNzd9.x1T6qlvUr9M0ibafMhqM46TEhZlrMjvY3SRZu9LHvXA&t=2024-05-18T06%3A54%3A37.269Z"
@@ -41,7 +42,7 @@ const items = [
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500"/>,
     },
     {
         title: "Remote Keycard",
@@ -55,7 +56,7 @@ const items = [
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconFileBroken className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconFileBroken className="h-4 w-4 text-neutral-500"/>,
     },
     {
         title: "Localized server",
@@ -69,7 +70,7 @@ const items = [
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconSignature className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconSignature className="h-4 w-4 text-neutral-500"/>,
     },
     {
         title: "Mapping",
@@ -77,42 +78,42 @@ const items = [
             "We have multiple developers working on custom server mappings! expect changes from time to time!",
         header: (
             <Image
-                src="/placeholder.svg?height=200&width=800"
+                src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/mapping.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L21hcHBpbmcud2VicCIsImlhdCI6MTczODQyMTM2MSwiZXhwIjozMzI0Mjg4NTM2MX0.LYnxti6NnIWq5-2KWajXzvWlum4RPM1W1zB4eb92Xt4&t=2025-02-01T14%3A49%3A22.075Z"
                 alt="Mapping"
                 width={800}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconTableColumn className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconTableColumn className="h-4 w-4 text-neutral-500"/>,
     },
     {
         title: "UIU Team",
-        description: "Join the quest for understanding and enlightenment.",
+        description: "Tired of just spawning as a normal MTF? We got you covered!",
         header: (
             <Image
-                src="/placeholder.svg?height=200&width=400"
-                alt="Knowledge"
+                src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/UIU.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1VJVS53ZWJwIiwiaWF0IjoxNzM4NDIxNzY0LCJleHAiOjMzMjQyODg1NzY0fQ.NayLg3Qx7CQBHj5ec5vzu9qxxlzJsbz565maLwcXCkE&t=2025-02-01T14%3A56%3A04.270Z"
+                alt="A UIU Operative"
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500"/>,
     },
     {
         title: "Serpeants' hand team",
-        description: "Experience the thrill of bringing ideas to life.",
+        description: "What if they were the real cause of the containment breach?",
         header: (
             <Image
-                src="/placeholder.svg?height=200&width=400"
+                src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Serpeants.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1NlcnBlYW50cy53ZWJwIiwiaWF0IjoxNzM4NDIyMTYxLCJleHAiOjMzMjQyODg2MTYxfQ.AjPkbZ9C32sCM8HBczEaCSSAfp8Sp7ileMg6v4nfclI&t=2025-02-01T15%3A02%3A41.950Z"
                 alt="Creation"
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconBoxAlignTopLeft className="h-4 w-4 text-neutral-500"/>,
     },
     {
         title: "The Spirit of Adventure",
@@ -126,7 +127,7 @@ const items = [
                 className="object-cover w-full h-[200px] rounded-t-xl"
             />
         ),
-        icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500"/>,
+        // icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500"/>,
     },
 ];
 
@@ -192,7 +193,7 @@ export default function Home() {
                             title={item.title}
                             description={item.description}
                             header={item.header}
-                            icon={item.icon}
+                            // icon={item.icon}
                             className={i === 3 || i === 6 ? "md:col-span-2" : ""}
                         />
                     ))}
@@ -204,8 +205,12 @@ export default function Home() {
                 {/* Radial gradient for the container to give a faded look */}
                 <div
                     className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+                <div>
+                    <h1 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+                        Wanna know more about us? <br/> <a href={"/about"}> <Cover>Click here</Cover> </a>
+                    </h1>
+                </div>
 
-                <AnimatedTestimonialsDemo/>
             </div>
 
         </div>
