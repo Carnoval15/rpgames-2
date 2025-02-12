@@ -104,7 +104,7 @@ const items = [
         // icon: <IconArrowWaveRightUp className="h-4 w-4 text-neutral-500"/>,
     },
     {
-        title: "Serpeants' hand team",
+        title: "Serpeant's hand team",
         description: "What if they were the real cause of the containment breach?",
         header: (
             <Image
