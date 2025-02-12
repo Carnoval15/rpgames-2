@@ -35,8 +35,9 @@ const items = [
         description: "Shoot the card scanners and see the magic happen.",
         header: (
             <Image
-                src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3MTYwMTUyNzcsImV4cCI6MzMyMjA0NzkyNzd9.x1T6qlvUr9M0ibafMhqM46TEhZlrMjvY3SRZu9LHvXA&t=2024-05-18T06%3A54%3A37.269Z"
+                src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Shoot.gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Nob290LmdpZiIsImlhdCI6MTczOTMzNDc3NCwiZXhwIjozMzI0Mzc5ODc3NH0.pLp5y6Nixw_iJvfHz8SMHmf7g390Kl2IF7IJLoMsheU"
                 alt="Shooting Interactions"
+                unoptimized={true}
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"
@@ -49,8 +50,9 @@ const items = [
         description: "Open any keycard required doors without the need to take out your keycard.",
         header: (
             <Image
-                src="/placeholder.svg?height=200&width=400"
+                src="https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Keyless.gif?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0tleWxlc3MuZ2lmIiwiaWF0IjoxNzM5MzM0NDI0LCJleHAiOjMzMjQzNzk4NDI0fQ.77XULe3plBecs67gfyX_b_iXR2Vbmxu4lcz4JwKSiBE"
                 alt="Remote Keycard"
+                unoptimized={true}
                 width={400}
                 height={200}
                 className="object-cover w-full h-[200px] rounded-t-xl"

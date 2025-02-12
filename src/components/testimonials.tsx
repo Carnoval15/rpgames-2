@@ -5,7 +5,7 @@ export function AnimatedTestimonialsDemo() {
     const testimonials = [
         {
             quote:
-                "The attention to detail and innovative features have completely transformed our workflow. This is exactly what we've been looking for.",
+                "At first, It was nothing and nothing at all, until god created assembly.  ",
             name: "Carnoval15",
             designation: "Developer at RPGames",
             src: "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/carnoval.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2Nhcm5vdmFsLndlYnAiLCJpYXQiOjE3MzgzODgxMzksImV4cCI6MzMyNDI4NTIxMzl9.gnvupHerjJv0WAlb31zVpnF96wsF47IZBUQhEooYxMQ",
