@@ -6,24 +6,24 @@ import React from "react";
 const people = [
     {
         id: 1,
-        name: "John Doe",
-        designation: "Software Engineer",
+        name: "Arya",
+        designation: "Head Manager",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3MTYwMTUyNzcsImV4cCI6MzMyMjA0NzkyNzd9.x1T6qlvUr9M0ibafMhqM46TEhZlrMjvY3SRZu9LHvXA&t=2024-05-18T06%3A54%3A37.269Z",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/Arya%20H-Manager.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL0FyeWEgSC1NYW5hZ2VyLndlYnAiLCJpYXQiOjE3NDEzNjI0NzIsImV4cCI6MzMyNDU4MjY0NzJ9.y4kfkSmNewJ1P641wV1Vp6_JrPyHSVu7Y32hYyXVwMo",
     },
     {
         id: 2,
-        name: "Robert Johnson",
-        designation: "Product Manager",
+        name: "Mahan",
+        designation: "Head Admin",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3MTYwMTUyNzcsImV4cCI6MzMyMjA0NzkyNzd9.x1T6qlvUr9M0ibafMhqM46TEhZlrMjvY3SRZu9LHvXA&t=2024-05-18T06%3A54%3A37.269Z",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/Mahan%20SMW%20H-Admin.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL01haGFuIFNNVyBILUFkbWluLndlYnAiLCJpYXQiOjE3NDEzNjI1MTcsImV4cCI6MzMyNDU4MjY1MTd9.YN_KpAwBjrbf_kKAGnNCOMNS2kAAyaBgx4pK7vYX-1w",
     },
     {
         id: 3,
-        name: "Jane Smith",
-        designation: "Data Scientist",
+        name: "Melo",
+        designation: "Moderator",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3MTYwMTUyNzcsImV4cCI6MzMyMjA0NzkyNzd9.x1T6qlvUr9M0ibafMhqM46TEhZlrMjvY3SRZu9LHvXA&t=2024-05-18T06%3A54%3A37.269Z",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/melo%20Mod.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL21lbG8gTW9kLndlYnAiLCJpYXQiOjE3NDEzNjI1NzQsImV4cCI6MzMyNDU4MjY1NzR9.FrlKA7X4sJjuCPsldcttR3s7bEIcmuJU_dypPz0kFSg",
     },
     {
         id: 4,

@@ -12,7 +12,7 @@ export function AnimatedTestimonialsDemo() {
         },
         {
             quote:
-                "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
+                "F WINDOWS!",
             name: "Arshia",
             designation: "Founder at RPGames",
             src: "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/arshia.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2Fyc2hpYS53ZWJwIiwiaWF0IjoxNzM4Mzg3NDcwLCJleHAiOjMzMjQyODUxNDcwfQ.HBrd0KVzP7BKni4W1qw7ou99fkZBxPO3tMIEEUIEzJA",
