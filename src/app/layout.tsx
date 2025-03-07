@@ -7,7 +7,19 @@ import React, {useState} from "react";
 import {HoveredLink, Menu, MenuItem, ProductItem} from "@/components/ui/navbar-menu";
 import {cn} from "@/lib/utils";
 import {FloatingNav} from "@/components/ui/floating-navbar";
+import {Navbar} from "@/components/ui/navbar";
 import {IconHome, IconMessage, IconUser} from "@tabler/icons-react";
+import {
+    NavigationMenu,
+    NavigationMenuContent,
+    NavigationMenuIndicator,
+    NavigationMenuItem,
+    NavigationMenuLink,
+    NavigationMenuList,
+    NavigationMenuTrigger,
+    NavigationMenuViewport,
+} from "@/components/ui/navigation-menu"
+
 
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
@@ -100,12 +112,13 @@ export default function RootLayout({
         <html lang="en">
         <Analytics/>
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
         >
+        <Navbar/>
         {children}
 
         <div className="dark">
-            <FloatingNavDemo/>
+            {/*<FloatingNavDemo/>*/}
             <div
                 className="h-96 w-full dark:bg-black bg-white  dark:bg-grid-white/[0.2] bg-grid-black/[0.2] relative flex items-center justify-center">
                 {/* Radial gradient for the container to give a faded look */}

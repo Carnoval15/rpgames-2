@@ -15,6 +15,7 @@ import {
     IconTableColumn,
 } from "@tabler/icons-react";
 import {motion} from "framer-motion";
+import {toast} from "sonner";
 import React from "react";
 
 //test
@@ -133,6 +134,17 @@ const items = [
     },
 ];
 
+function showToast() {
+    console.log("clicked");
+    toast("Event has been created", {
+        description: "Sunday, December 03, 2023 at 9:00 AM",
+        action: {
+            label: "Undo",
+            onClick: () => console.log("Undo"),
+        },
+    })
+    console.log("afer");
+}
 export default function Home() {
     return (
         <div className="dark">
