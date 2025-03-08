@@ -7,7 +7,6 @@ import { Menu } from "lucide-react"
 
 import { Button } from "@/components/ui/button"
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet"
-import { cn } from "@/lib/utils"
 
 export function Navbar() {
     const pathname = usePathname()
@@ -25,8 +24,13 @@ export function Navbar() {
         { name: "Contact", href: "/contact" },
     ]
 
+    // Helper function to conditionally join class names
+    const cn = (...classes: string[]) => {
+        return classes.filter(Boolean).join(" ")
+    }
+
     return (
-        <header className="sticky top-0 z-40 w-full bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60">
+        <header className="fixed left-1/2 -translate-x-1/2 top-0 md:top-4 z-40 rounded-b-lg md:rounded-full w-full md:max-w-md bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60 border-b md:border border-border/40">
             <div className="flex h-16 items-center justify-center relative">
                 {/* Mobile Menu Button - Fixed to the left edge */}
                 <div className="absolute left-4 md:hidden">
@@ -43,7 +47,7 @@ export function Navbar() {
                         </SheetTrigger>
                         <SheetContent
                             side="left"
-                            className="w-[240px] sm:w-[300px] bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60 border-r border-border"
+                            className="w-[240px] sm:w-[300px] bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60 border-r border-border rounded-r-lg"
                         >
                             <nav className="flex flex-col gap-4 mt-8">
                                 {navItems.map((item) => {
@@ -67,7 +71,7 @@ export function Navbar() {
                 </div>
 
                 {/* Desktop Navigation - Centered */}
-                <div className="max-w-md">
+                <div className="px-6">
                     <nav className="hidden md:flex gap-6">
                         {navItems.map((item) => {
                             const isActive = pathname === item.href

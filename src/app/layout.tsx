@@ -112,9 +112,10 @@ export default function RootLayout({
         <html lang="en">
         <Analytics/>
         <body
-            className={`${geistSans.variable} ${geistMono.variable} antialiased dark`}
+            className={`${geistSans.variable} ${geistMono.variable} antialiased dark m-0 p-0`}
         >
         <Navbar/>
+
         {children}
 
         <div className="dark">
