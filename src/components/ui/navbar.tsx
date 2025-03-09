@@ -26,8 +26,8 @@ export function Navbar() {
     ]
 
     return (
-        <div className="w-full flex justify-center sticky top-4 z-40">
-            <header className="w-full md:w-auto md:rounded-full bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60 md:px-6">
+        <div className="w-full flex justify-center fixed top-4 z-40">
+            <header className="w-full md:w-auto md:rounded-full bg-background/80 backdrop-blur-sm supports-[backdrop-filter]:bg-background/60 md:px-6 shadow-sm">
                 <div className="flex h-16 items-center justify-center relative">
                     {/* Mobile Menu Button - Fixed to the left edge */}
                     <div className="absolute left-4 md:hidden">
