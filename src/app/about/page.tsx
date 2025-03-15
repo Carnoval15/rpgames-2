@@ -6,17 +6,17 @@ import React from "react";
 const people = [
     {
         id: 1,
-        name: "Arya",
-        designation: "Head Manager",
+        name: "Arshia",
+        designation: "Owner",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/Arya%20H-Manager.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL0FyeWEgSC1NYW5hZ2VyLndlYnAiLCJpYXQiOjE3NDEzNjI0NzIsImV4cCI6MzMyNDU4MjY0NzJ9.y4kfkSmNewJ1P641wV1Vp6_JrPyHSVu7Y32hYyXVwMo",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/arshia.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2Fyc2hpYS53ZWJwIiwiaWF0IjoxNzM4Mzg3NDcwLCJleHAiOjMzMjQyODUxNDcwfQ.HBrd0KVzP7BKni4W1qw7ou99fkZBxPO3tMIEEUIEzJA",
     },
     {
         id: 2,
-        name: "White Shadow",
-        designation: "Manager",
+        name: "Carnoval",
+        designation: "Head Developer",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/White%20Shadow%20Manager.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL1doaXRlIFNoYWRvdyBNYW5hZ2VyLndlYnAiLCJpYXQiOjE3NDEzNjQxMDYsImV4cCI6MzMyNDU4MjgxMDZ9.2loH18OZ0pnjJHAlD-pwb89GO02GWv1tTu1fRuUorHY",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/carnoval.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2Nhcm5vdmFsLndlYnAiLCJpYXQiOjE3MzgzODgxMzksImV4cCI6MzMyNDI4NTIxMzl9.gnvupHerjJv0WAlb31zVpnF96wsF47IZBUQhEooYxMQ",
     },
     {
         id: 3,
@@ -59,13 +59,27 @@ export default function About() {
                     <div
                         className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
 
-                    <div className="flex flex-col py-[12rem] items-center justify-center">
-                        <AnimatedTestimonialsDemo/>
+                    {/*<div className="flex flex-col py-[12rem] items-center justify-center">*/}
+                    {/*    <AnimatedTestimonialsDemo/>*/}
+                    {/*</div>*/}
+
+                    <div
+                        className="z-30 lg:h-screen md:h-screen sm:h-screen w-screen dark:bg-black bg-white dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex flex-col items-center justify-center">
+                        {/* Radial gradient for the container to give a faded look */}
+                        <div
+                            className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
+
+                        <div className="flex flex-col items-center justify-center z-20">
+                            <h2 className="text-4xl md:text-4xl lg:text-6xl font-semibold max-w-7xl mx-auto text-center mt-6 relative z-20 py-6 bg-clip-text text-transparent bg-gradient-to-b from-neutral-800 via-neutral-700 to-neutral-700 dark:from-neutral-800 dark:via-white dark:to-white">
+                                RPGames <br/>
+                            </h2>
+
+                            <div className="flex flex-row items-center justify-center w-full">
+                                <AnimatedTooltip items={people}/>
+                            </div>
+                        </div>
                     </div>
 
-                    <div className="flex flex-row items-center justify-center mb-10 w-full">
-                        <AnimatedTooltip items={people}/>
-                    </div>
                 </div>
             </div>
         </div>
