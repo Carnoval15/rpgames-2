@@ -25,6 +25,8 @@ const images = [
     "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic03.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAzLndlYnAiLCJpYXQiOjE3NDIwNDk3OTMsImV4cCI6MzMyNDY1MTM3OTN9.yek_-CI95OQ_I9tIHiOO_uFUXB0tIdF_Xon65YbPzRI",
     "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic02.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAyLndlYnAiLCJpYXQiOjE3NDIwNDk4MDUsImV4cCI6MzMyNDY1MTM4MDV9.hzPBs71unbUgHfMSzCiwrYQiUGF2vk8JvmMIIF9cUu8",
     "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic01.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzAxLndlYnAiLCJpYXQiOjE3NDIwNDk4MjAsImV4cCI6MzMyNDY1MTM4MjB9.p5CEPJzkRU91PWtfw6fPOt32MfnD62a10qotVClek48",
+    "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic06.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzA2LndlYnAiLCJpYXQiOjE3NDIwNTA0NzQsImV4cCI6MzMyNDY1MTQ0NzR9.1_RMcxN4EH3Bk4wSPCp5y79CiwnNnFV6H-Q5AXiMDmE",
+    "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Communitypic07.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L0NvbW11bml0eXBpYzA3LndlYnAiLCJpYXQiOjE3NDIwNTA0ODksImV4cCI6MzMyNDY1MTQ0ODl9.o2HNI_BibsTq8DrdQjIlpBtMGGGe3Y7hVbk4NtRi1yM",
 
 ];
 const Skeleton = () => (
