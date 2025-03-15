@@ -137,11 +137,11 @@ export default function RootLayout({
                         />
 
                         <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-5 text-sm md:text-lg font-bold text-transparent sm:text-sm text-center">
-                            VNext Ltd. <br/>Providing the best gaming community since 2021
+                            VNext LLC <br/>Providing the best gaming community since 2021
                         </p>
 
                         <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-2 font-bold text-transparent text-center">
-                            Copyright © 2024 - All right reserved <br/> Designed,Coded and programmed
+                            Copyright © 2021-2025 - All right reserved <br/> Designed,Coded and programmed
                             with ❤️ by Carnoval15 (discord)
                         </p>
                     </aside>
