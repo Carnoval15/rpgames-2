@@ -9,6 +9,7 @@ import {cn} from "@/lib/utils";
 import {FloatingNav} from "@/components/ui/floating-navbar";
 import {Navbar} from "@/components/ui/navbar";
 import {IconHome, IconMessage, IconUser} from "@tabler/icons-react";
+import Script from 'next/script';
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -115,6 +116,20 @@ export default function RootLayout({
             className={`${geistSans.variable} ${geistMono.variable} antialiased dark m-0 p-0`}
         >
         <Navbar/>
+        <Script id="crisp-widget" strategy="afterInteractive">
+            {`
+    window.$crisp=[];
+    window.CRISP_WEBSITE_ID="4e0aa8c8-0d52-47ee-86fc-4fedfc9b8dac";
+    (function(){
+      d=document;
+      s=d.createElement("script");
+      s.src="https://client.crisp.chat/l.js";
+      s.async=1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  `}
+        </Script>
+
 
         {children}
 
