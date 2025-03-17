@@ -7,37 +7,37 @@ const people = [
     {
         id: 1,
         name: "Arshia",
-        designation: "Owner",
+        designation: "Founder",
         image:
             "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/arshia.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2Fyc2hpYS53ZWJwIiwiaWF0IjoxNzM4Mzg3NDcwLCJleHAiOjMzMjQyODUxNDcwfQ.HBrd0KVzP7BKni4W1qw7ou99fkZBxPO3tMIEEUIEzJA",
     },
     {
         id: 2,
+        name: "Dark killer",
+        designation: "Co Owner",
+        image:
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/darkkiller%20-coowner.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2RhcmtraWxsZXIgLWNvb3duZXIud2VicCIsImlhdCI6MTc0MjIxODQ4MCwiZXhwIjozMzI0NjY4MjQ4MH0.1EiJ9pm9QyO29t2QgnRtfQu40RkWUxWCmAnnHJhsGpo",
+    },
+    {
+        id: 3,
         name: "Carnoval",
         designation: "Head Developer",
         image:
             "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/carnoval.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL2Nhcm5vdmFsLndlYnAiLCJpYXQiOjE3MzgzODgxMzksImV4cCI6MzMyNDI4NTIxMzl9.gnvupHerjJv0WAlb31zVpnF96wsF47IZBUQhEooYxMQ",
     },
     {
-        id: 3,
-        name: "Mahan",
-        designation: "Head Admin",
-        image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/Mahan%20SMW%20H-Admin.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL01haGFuIFNNVyBILUFkbWluLndlYnAiLCJpYXQiOjE3NDEzNjI1MTcsImV4cCI6MzMyNDU4MjY1MTd9.YN_KpAwBjrbf_kKAGnNCOMNS2kAAyaBgx4pK7vYX-1w",
-    },
-    {
         id: 4,
         name: "Melo",
         designation: "Head Moderator",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/melo%20H-Mod.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL21lbG8gSC1Nb2Qud2VicCIsImlhdCI6MTc0MTM2MzM4NCwiZXhwIjozMzI0NTgyNzM4NH0.SseyRMBDoRJ6ZjEwovSpdOoG5Q4Jb0E-bAQ1A8GwAZw",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/melo%20-head%20mod.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL21lbG8gLWhlYWQgbW9kLndlYnAiLCJpYXQiOjE3NDIyMTg2MjcsImV4cCI6MzMyNDY2ODI2Mjd9.euiyJHguaZRsIG9mn-lWzGL3iz9C59Ze0GJvBKaiOk4",
     },
     {
         id: 5,
         name: "Sina GP",
         designation: "Head Helper",
         image:
-            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/Sina%20GP%20H-Helper.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL1NpbmEgR1AgSC1IZWxwZXIud2VicCIsImlhdCI6MTc0MTM2NDE2NSwiZXhwIjozMzI0NTgyODE2NX0.sSyIw0I0sg-gzPoPwSRJuUc-PNvvBYsDkUsUuK20-xU",
+            "https://yqxicxlxliqzxrzajydh.supabase.co/storage/v1/object/sign/Gallery/Profiles/sinagp%20-head%20helper.webp?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1cmwiOiJHYWxsZXJ5L1Byb2ZpbGVzL3NpbmFncCAtaGVhZCBoZWxwZXIud2VicCIsImlhdCI6MTc0MjIxODc2NCwiZXhwIjozMzI0NjY4Mjc2NH0.MSF_sbiWnz2ToLDLO5fSZ8q4AsrmmPUsyN5ru4CZ64Q",
     },
     {
         id: 6,
