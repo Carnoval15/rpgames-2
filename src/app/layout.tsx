@@ -9,6 +9,7 @@ import {cn} from "@/lib/utils";
 import {FloatingNav} from "@/components/ui/floating-navbar";
 import {Navbar} from "@/components/ui/navbar";
 import {IconHome, IconMessage, IconUser} from "@tabler/icons-react";
+import {IconBrandTelegram, IconBrandInstagram, IconBrandDiscord} from "@tabler/icons-react";
 import Script from 'next/script';
 import {
     NavigationMenu,
@@ -20,6 +21,7 @@ import {
     NavigationMenuTrigger,
     NavigationMenuViewport,
 } from "@/components/ui/navigation-menu"
+
 
 
 const geistSans = localFont({
@@ -154,6 +156,12 @@ export default function RootLayout({
                         <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-5 text-sm md:text-lg font-bold text-transparent sm:text-sm text-center">
                             VNext LLC <br/>Providing the best gaming community since 2021
                         </p>
+                        <div className="grid grid-cols-3 gap-4 items-center justify-center">
+                            <IconBrandTelegram onClick={() => window.open("https://t.me/rpgamesofficial")} style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-sky-500"/>
+                            <IconBrandInstagram onClick={() => window.open("https://www.instagram.com/rpgames.official/")} style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-pink-500"/>
+                            <IconBrandDiscord onClick={() => window.open("https://discord.gg/Mz44FGb6RJ")} style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-indigo-500"/>
+
+                        </div>
 
                         <p className="relative z-20 bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text py-2 font-bold text-transparent text-center">
                             Copyright © 2021-2025 - All right reserved <br/> Designed,Coded and programmed
