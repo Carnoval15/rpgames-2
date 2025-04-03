@@ -23,7 +23,6 @@ import {
 } from "@/components/ui/navigation-menu"
 
 
-
 const geistSans = localFont({
     src: "./fonts/GeistVF.woff",
     variable: "--font-geist-sans",
@@ -118,19 +117,28 @@ export default function RootLayout({
             className={`${geistSans.variable} ${geistMono.variable} antialiased dark m-0 p-0`}
         >
         <Navbar/>
-        <Script id="crisp-widget" strategy="afterInteractive">
-            {`
-    window.$crisp=[];
-    window.CRISP_WEBSITE_ID="4e0aa8c8-0d52-47ee-86fc-4fedfc9b8dac";
-    (function(){
-      d=document;
-      s=d.createElement("script");
-      s.src="https://client.crisp.chat/l.js";
-      s.async=1;
-      d.getElementsByTagName("head")[0].appendChild(s);
-    })();
-  `}
-        </Script>
+        {/*      <Script id="crisp-widget" strategy="afterInteractive">*/}
+        {/*          {`*/}
+        {/*  window.$crisp=[];*/}
+        {/*  window.CRISP_WEBSITE_ID="4e0aa8c8-0d52-47ee-86fc-4fedfc9b8dac";*/}
+        {/*  (function(){*/}
+        {/*    d=document;*/}
+        {/*    s=d.createElement("script");*/}
+        {/*    s.src="https://client.crisp.chat/l.js";*/}
+        {/*    s.async=1;*/}
+        {/*    d.getElementsByTagName("head")[0].appendChild(s);*/}
+        {/*  })();*/}
+        {/*`}*/}
+        {/*      </Script>*/}
+        <Script
+            id="goftino-widget"
+            strategy="afterInteractive"
+            dangerouslySetInnerHTML={{
+                __html: `
+      !function(){var i="U4Tf9p",a=window,d=document;function g(){var g=d.createElement("script"),s="https://www.goftino.com/widget/"+i,l=localStorage.getItem("goftino_"+i);g.async=!0,g.src=l?s+"?o="+l:s;d.getElementsByTagName("head")[0].appendChild(g);}"complete"===d.readyState?g():a.attachEvent?a.attachEvent("onload",g):a.addEventListener("load",g,!1);}();
+    `
+            }}
+        />
 
 
         {children}
@@ -157,9 +165,13 @@ export default function RootLayout({
                             VNext LLC <br/>Providing the best gaming community since 2021
                         </p>
                         <div className="grid grid-cols-3 gap-4 items-center justify-center">
-                            <IconBrandTelegram onClick={() => window.open("https://t.me/rpgamesofficial")} style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-sky-500"/>
-                            <IconBrandInstagram onClick={() => window.open("https://www.instagram.com/rpgames.official/")} style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-pink-500"/>
-                            <IconBrandDiscord onClick={() => window.open("https://discord.gg/Mz44FGb6RJ")} style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-indigo-500"/>
+                            <IconBrandTelegram onClick={() => window.open("https://t.me/rpgamesofficial")}
+                                               style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-sky-500"/>
+                            <IconBrandInstagram
+                                onClick={() => window.open("https://www.instagram.com/rpgames.official/")}
+                                style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-pink-500"/>
+                            <IconBrandDiscord onClick={() => window.open("https://discord.gg/Mz44FGb6RJ")}
+                                              style={{cursor: 'pointer'}} className="h-6 w-6 hover:text-indigo-500"/>
 
                         </div>
 
