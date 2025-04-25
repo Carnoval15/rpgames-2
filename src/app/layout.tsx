@@ -87,7 +87,7 @@ function FloatingNavDemo() {
         },
         {
             name: "Shop",
-            link: "/contact",
+            link: "/rankshop",
             icon: (
                 <IconMessage className="h-4 w-4 text-neutral-500 dark:text-white"/>
             ),
