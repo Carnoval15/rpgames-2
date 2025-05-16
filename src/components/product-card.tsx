@@ -63,7 +63,7 @@ export function ProductCard({ product }: ProductCardProps) {
                     <h3 className="font-medium text-lg mb-1 line-clamp-1 text-[#f8f9fa]">{product.name}</h3>
                     <div className="flex items-center gap-2">
             <span className="font-bold text-lg bg-clip-text text-transparent bg-gradient-to-r from-[#f8f9fa] to-[#a0a0a0]">
-              ${(product.price * (1 - product.discount / 100)).toFixed(2)}
+              ريال{(product.price * (1 - product.discount / 100)).toFixed(0)}
             </span>
                         {product.discount > 0 && (
                             <span className="text-[#a0a0a0] line-through text-sm">${product.price.toFixed(2)}</span>
