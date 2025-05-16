@@ -32,7 +32,7 @@ export const products: Product[] = [
     {
         id: 3,
         name: "Leather Sneakers",
-        price: 89.99,
+        price: 1000000,
         discount: 0,
         category: "Shoes",
         image: "/placeholder.svg?height=300&width=300",
