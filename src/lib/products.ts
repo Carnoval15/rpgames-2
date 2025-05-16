@@ -13,21 +13,21 @@ export const categories = ["Clothing", "Shoes", "Accessories", "Electronics", "H
 export const products: Product[] = [
     {
         id: 1,
-        name: "Premium Cotton T-Shirt",
+        name: "Vnext Prime",
         price: 29.99,
         discount: 0,
-        category: "Clothing",
+        category: "Rank",
         image: "/placeholder.svg?height=300&width=300",
-        isNew: true,
+        isNew: false,
     },
     {
         id: 2,
-        name: "Slim Fit Jeans",
+        name: "Vnext Classic",
         price: 59.99,
         discount: 15,
-        category: "Clothing",
+        category: "Rank",
         image: "/placeholder.svg?height=300&width=300",
-        isNew: false,
+        isNew: true,
     },
     {
         id: 3,
