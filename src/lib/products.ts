@@ -14,7 +14,7 @@ export const products: Product[] = [
     {
         id: 1,
         name: "Vnext Prime",
-        price: 29.99,
+        price: 200000,
         discount: 0,
         category: "Rank",
         image: "/placeholder.svg?height=300&width=300",
@@ -23,7 +23,7 @@ export const products: Product[] = [
     {
         id: 2,
         name: "Vnext Classic",
-        price: 59.99,
+        price: 150000,
         discount: 15,
         category: "Rank",
         image: "/placeholder.svg?height=300&width=300",
