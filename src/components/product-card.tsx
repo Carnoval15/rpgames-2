@@ -66,7 +66,7 @@ export function ProductCard({ product }: ProductCardProps) {
               ريال{(product.price * (1 - product.discount / 100)).toFixed(0)}
             </span>
                         {product.discount > 0 && (
-                            <span className="text-[#a0a0a0] line-through text-sm">${product.price.toFixed(2)}</span>
+                            <span className="text-[#a0a0a0] line-through text-sm">ريال{product.price.toFixed(2)}</span>
                         )}
                     </div>
                 </div>
